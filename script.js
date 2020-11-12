@@ -637,7 +637,7 @@ var rares = [
 var html = `
 	<div class="col-md-4">
 		<div class="card mb-4 box-shadow" data-clarity-unmask="True">
-			<p class="mt-3 mb-0 pr-3 text-right"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Spawns in {{nextSpawnDuration}} ({{nextSpawn}} local time)</p>
+			<p class="mt-3 mb-0 pr-3 text-right"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Spawns in {{nextSpawnDuration}} ({{nextSpawn}})</p>
 			<img class="card-img-top" src="{{img}}" alt="{{name}}">
 			<div class="card-body">
 				<h4><a href="https://www.wowhead.com/npc={{id}}/" target="_blank" data-wowhead="npc={{id}}">{{name}}</a></h4>
@@ -655,7 +655,7 @@ var html = `
 						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));"><i class="fa fa-map-marker"></i>&nbsp; Map Point</button>
 					</div>
 					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} at '..b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} at '..b.GetUserWaypointHyperlink() in {{nextSpawnDuration}} ({{nextSpawn}}),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
 					</div>
 					<div class="btn-group">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
