@@ -655,7 +655,7 @@ var html = `
 						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));"><i class="fa fa-map-marker"></i>&nbsp; Map Point</button>
 					</div>
 					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} spawns in {{nextSpawnDuration}} ({{nextSpawn}}),'GUILD',_,_);SendChatMessage(''..b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
 					</div>
 					<div class="btn-group">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
@@ -687,7 +687,7 @@ function nextSpawn(rare)
 	var duration = moment.duration(spawnTimer.diff(currentDate));
 
 	rare.nextSpawnMins = Math.round(duration.asMinutes());
-	rare.nextSpawnDuration = duration.humanize();
+	rare.nextSpawnDuration = duration + "min";
 	rare.nextSpawn = spawnTimer.format("HH:mm");
 }
 
