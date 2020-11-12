@@ -459,7 +459,7 @@ var rares = [
 		]
 	},
 	{
-		name: "The Prophet Tharon'ja",
+		name: "The Prophet Tharon\'ja",
 		img: "images/the-prophet-tharonja.png",
 		desc: "Prophet Tharon'ja, a skeletal wind serpent, is the last boss of Drak'Tharon Keep.",
 		way: {
