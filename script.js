@@ -5,6 +5,8 @@ const init = {
 	timer: "2020-11-12T03:20:00Z"
 }
 
+
+
 var rares = [
 	{
 		name: "Noth the Plaguebringer",
@@ -459,7 +461,7 @@ var rares = [
 		]
 	},
 	{
-		name: "The Prophet Tharon\'ja",
+		name: "The Prophet Tharon'ja",
 		img: "images/the-prophet-tharonja.png",
 		desc: "Prophet Tharon'ja, a skeletal wind serpent, is the last boss of Drak'Tharon Keep.",
 		way: {
@@ -653,7 +655,7 @@ var html = `
 						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));"><i class="fa fa-map-marker"></i>&nbsp; Map Point</button>
 					</div>
 					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{name}} at '..b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} at '..b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
 					</div>
 					<div class="btn-group">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
@@ -721,6 +723,9 @@ function refreshCards() {
 	rares.sort((a, b) => (a.nextSpawnMins > b.nextSpawnMins) ? 1 : -1)
 
 	// compile the template
+	Handlebars.registerHelper('escape', function(variable) {
+  return variable.replace(/(['"])/g, '\\$1');
+});
 	var template = Handlebars.compile(html);
 
 	// execute the compiled template and print the output to the console
