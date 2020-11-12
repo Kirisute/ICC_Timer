@@ -687,7 +687,7 @@ function nextSpawn(rare)
 	var duration = moment.duration(spawnTimer.diff(currentDate));
 
 	rare.nextSpawnMins = Math.round(duration.asMinutes());
-	rare.nextSpawnDuration = duration.asMinutes() +" min";
+	rare.nextSpawnDuration = duration.asMinutes().round() +" min";
 	rare.nextSpawn = spawnTimer.format("HH:mm");
 }
 
