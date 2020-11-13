@@ -654,11 +654,20 @@ var html = `
 					<div class="btn-group">
 						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));"><i class="fa fa-map-marker"></i>&nbsp; Map Point</button>
 					</div>
-					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Announce</button>
-					</div>
+					
 					<div class="btn-group">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
+					</div>
+				</div>
+<p class"mt-1 mb-0 text-left">Announce:</p>
+<hr>
+				<div class="d-flex justify-content-between align-items-center">
+					
+					<div class="btn-group">
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','CHANNEL',_,1);SendChatMessage(b.GetUserWaypointHyperlink(),'CHANNEL',_,1);"><i class="fa fa-commenting-o"></i>&nbsp; 1. General</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Guild</button>
 					</div>
 				</div>
 			</div>
