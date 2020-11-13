@@ -637,7 +637,7 @@ var rares = [
 var html = `
 	<div class="col-md-4">
 		<div class="card mb-4 box-shadow" data-clarity-unmask="True">
-			<p class="mt-3 mb-0 pr-3 text-right"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Spawns in {{nextSpawnDuration}} ({{nextSpawn}})</p>
+			<p class="mt-3 mb-0 text-center"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Spawns in {{nextSpawnDuration}} ({{nextSpawn}})</p>
 			<img class="card-img-top" src="{{img}}" alt="{{name}}">
 			<div class="card-body">
 				<h4><a href="https://www.wowhead.com/npc={{id}}/" target="_blank" data-wowhead="npc={{id}}">{{name}}</a></h4>
