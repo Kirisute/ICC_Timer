@@ -659,8 +659,8 @@ var html = `
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
 					</div>
 				</div>
-<p class"mt-1 mb-0 text-left">Announce:</p>
-<hr>
+<p class="mt-1 mb-0 text-left">Announce:</p>
+<hr class="bg-light>
 				<div class="d-flex justify-content-between align-items-center">
 					
 					<div class="btn-group">
@@ -741,7 +741,7 @@ function refreshCards() {
 	for (rare of rares) {
 		$("#cards").append(template(rare));
 	}
-	$WowheadPower.refreshLinks();
+	
 	$('.waypoint').tooltip({
 		trigger: 'click',
 		placement: 'bottom'
@@ -751,6 +751,12 @@ function refreshCards() {
 		ga('send', 'event', 'cards', 'refresh');
 	}
 
+	setTimeout(
+  function() 
+  {
+    $WowheadPower.refreshLinks();
+  }, 500);
+	
 	return false;
 }
 
