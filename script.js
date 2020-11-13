@@ -669,7 +669,7 @@ var html = `
 						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','CHANNEL',_,1);SendChatMessage(b.GetUserWaypointHyperlink(),'CHANNEL',_,1);"><i class="fa fa-commenting-o"></i>&nbsp; 1. General</button>
 					</div>
 					<div class="btn-group ml-2">
-						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'SAY',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Say</button>
+						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','SAY',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'SAY',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Say</button>
 					</div>
 				</div>
 			</div>
