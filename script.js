@@ -659,16 +659,16 @@ var html = `
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
 					</div>
 				</div>
-<p class="mt-1 mb-0 text-left">Announce:</p>
-<hr class="bg-light">
-				<div class="d-flex justify-content-between align-items-center">
+<p class="mt-2 mb-0 text-left">Announce:</p>
+<hr class="bg-light mt-0 mb-1">
+				<div class="d-flex justify-content-start align-items-center">
 					<div class="btn-group">
 						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Guild</button>
 					</div>
-					<div class="btn-group">
+					<div class="btn-group ml-2">
 						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','CHANNEL',_,1);SendChatMessage(b.GetUserWaypointHyperlink(),'CHANNEL',_,1);"><i class="fa fa-commenting-o"></i>&nbsp; 1. General</button>
 					</div>
-					<div class="btn-group">
+					<div class="btn-group ml-2">
 						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'SAY',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Say</button>
 					</div>
 				</div>
