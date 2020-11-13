@@ -724,15 +724,15 @@ function refreshCards() {
 
 	// compile the template
 	Handlebars.registerHelper('escape', function(variable) {
-  return variable.replace(/(['"])/g, '\\$1');
-});
+	  return variable.replace(/(['"])/g, '\\$1');
+	});
 	var template = Handlebars.compile(html);
 
 	// execute the compiled template and print the output to the console
 	for (rare of rares) {
 		$("#cards").append(template(rare));
 	}
-
+	$WowheadPower.refreshLinks();
 	$('.waypoint').tooltip({
 		trigger: 'click',
 		placement: 'bottom'
