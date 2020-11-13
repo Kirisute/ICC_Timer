@@ -660,7 +660,7 @@ var html = `
 					</div>
 				</div>
 <p class="mt-1 mb-0 text-left">Announce:</p>
-<hr class="bg-light>
+<hr class="bg-light">
 				<div class="d-flex justify-content-between align-items-center">
 					<div class="btn-group">
 						<button type="button" class="announce waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{escape name}} in {{nextSpawnDuration}} ({{nextSpawn}})','GUILD',_,_);SendChatMessage(b.GetUserWaypointHyperlink(),'GUILD',_,_);"><i class="fa fa-commenting-o"></i>&nbsp; Guild</button>
