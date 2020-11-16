@@ -654,7 +654,9 @@ var html = `
 					<div class="btn-group">
 						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));"><i class="fa fa-map-marker"></i>&nbsp; Map Point</button>
 					</div>
-					
+					<div class="btn-group ml-2">
+						<button type="button" class="map waypoint btn btn-sm btn-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));DEFAULT_CHAT_FRAME.editBox:SetText('/pull {{nextSpawnSecs}}') ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0);"><i class="fa fa-map-marker"></i>&nbsp; Map Point + Timer</button>
+					</div>
 					<div class="btn-group ml-2">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-primary" data-clipboard-text="/way {{way.x}} {{way.y}}"><i class="fa fa-location-arrow"></i>&nbsp; TomTom</button>
 					</div>
@@ -699,6 +701,7 @@ function nextSpawn(rare)
 
 	rare.nextSpawnMins = Math.round(duration.asMinutes());
 	rare.nextSpawnDuration = Math.round(duration.asMinutes()) +" min";
+	rare.nextSpawnSecs = duration.asSeconds();
 	rare.nextSpawn = spawnTimer.format("HH:mm");
 }
 
