@@ -7,131 +7,7 @@ const init = {
 
 
 
-var rares = [
-	{
-		name: "Noth the Plaguebringer",
-		img: "images/noth-the-plaguebringer.png",
-		desc: "Noth the Plaguebringer is the first boss of the Plague Quarter of Naxxramas.",
-		way: {
-			x: 31.6,
-			y: 70.5
-		},
-		id: 174067,
-		loot: [
-			{
-				id: 183642,
-				name: "Robes of Rasped Breaths"
-			},
-			{
-				id: 183676,
-				name: "Hailstone Loop"
-			},
-			{
-				id: 183200,
-				name: "Pitch Black Scourgestone"
-			},
-			{
-				id: 183616,
-				name: "Accursed Keepsake"
-			}
-		]
-	},
-	{
-		name: "Patchwerk",
-		img: "images/patchwerk.png",
-		desc: "Patchwerk is the first boss of the Construct Quarter of Naxxramas.",
-		way: {
-			x: 34.4,
-			y: 68.5
-		},
-		id: 174066,
-		loot: [
-			{
-				id: 183645,
-				name: "Cinch of the Tortured"
-			},
-			{
-				id: 183644,
-				name: "Regurgitator's Shoulderpads"
-			},
-			{
-				id: 183643,
-				name: "Severance of Mortality"
-			},
-			{
-				id: 183200,
-				name: "Pitch Black Scourgestone"
-			},
-			{
-				id: 183616,
-				name: "Accursed Keepsake"
-			}
-		]
-	},
-	{
-		name: "Blood Queen Lana'thel",
-		img: "images/blood-queen-lanathel.png",
-		desc: "Blood-Queen Lana'thel is the last boss in the Crimson Hall of Icecrown Citadel.",
-		way: {
-			x: 49.7,
-			y: 32.7
-		},
-		id: 174065,
-		loot: [
-			{
-				id: 183646,
-				name: "Chestguard of Siphoned Vitality"
-			},
-			{
-				id: 183648,
-				name: "Veincrusher Gauntlets"
-			},
-			{
-				id: 183647,
-				name: "Bloodspatter"
-			},
-			{
-				id: 183200,
-				name: "Pitch Black Scourgestone"
-			},
-			{
-				id: 183616,
-				name: "Accursed Keepsake"
-			}
-		]
-	},
-	{
-		name: "Professor Putricide",
-		img: "images/professor-putricide.png",
-		desc: "Professor Putricide is the Scourge genius behind the development of all forms of blight, plague, ooze, scourge, and death delivery.",
-		way: {
-			x: 57.1,
-			y: 30.3
-		},
-		id: 174064,
-		loot: [
-			{
-				id: 183649,
-				name: "Bag of Discarded Entrails"
-			},
-			{
-				id: 183651,
-				name: "Chestplate of Septic Sutures"
-			},
-			{
-				id: 183650,
-				name: "Miniscule Abomination in a Jar"
-			},
-			{
-				id: 183200,
-				name: "Pitch Black Scourgestone"
-			},
-			{
-				id: 183616,
-				name: "Accursed Keepsake"
-			}
-		]
-	},
+var rares = [	
 	{
 		name: "Lady Deathwhisper",
 		img: "images/lady-deathwhisper.png",
@@ -621,6 +497,130 @@ var rares = [
 			{
 				id: 183673,
 				name: "Nerubian Aegis Ring"
+			},
+			{
+				id: 183200,
+				name: "Pitch Black Scourgestone"
+			},
+			{
+				id: 183616,
+				name: "Accursed Keepsake"
+			}
+		]
+	},
+	{
+		name: "Noth the Plaguebringer",
+		img: "images/noth-the-plaguebringer.png",
+		desc: "Noth the Plaguebringer is the first boss of the Plague Quarter of Naxxramas.",
+		way: {
+			x: 31.6,
+			y: 70.5
+		},
+		id: 174067,
+		loot: [
+			{
+				id: 183642,
+				name: "Robes of Rasped Breaths"
+			},
+			{
+				id: 183676,
+				name: "Hailstone Loop"
+			},
+			{
+				id: 183200,
+				name: "Pitch Black Scourgestone"
+			},
+			{
+				id: 183616,
+				name: "Accursed Keepsake"
+			}
+		]
+	},
+	{
+		name: "Patchwerk",
+		img: "images/patchwerk.png",
+		desc: "Patchwerk is the first boss of the Construct Quarter of Naxxramas.",
+		way: {
+			x: 34.4,
+			y: 68.5
+		},
+		id: 174066,
+		loot: [
+			{
+				id: 183645,
+				name: "Cinch of the Tortured"
+			},
+			{
+				id: 183644,
+				name: "Regurgitator's Shoulderpads"
+			},
+			{
+				id: 183643,
+				name: "Severance of Mortality"
+			},
+			{
+				id: 183200,
+				name: "Pitch Black Scourgestone"
+			},
+			{
+				id: 183616,
+				name: "Accursed Keepsake"
+			}
+		]
+	},
+	{
+		name: "Blood Queen Lana'thel",
+		img: "images/blood-queen-lanathel.png",
+		desc: "Blood-Queen Lana'thel is the last boss in the Crimson Hall of Icecrown Citadel.",
+		way: {
+			x: 49.7,
+			y: 32.7
+		},
+		id: 174065,
+		loot: [
+			{
+				id: 183646,
+				name: "Chestguard of Siphoned Vitality"
+			},
+			{
+				id: 183648,
+				name: "Veincrusher Gauntlets"
+			},
+			{
+				id: 183647,
+				name: "Bloodspatter"
+			},
+			{
+				id: 183200,
+				name: "Pitch Black Scourgestone"
+			},
+			{
+				id: 183616,
+				name: "Accursed Keepsake"
+			}
+		]
+	},
+	{
+		name: "Professor Putricide",
+		img: "images/professor-putricide.png",
+		desc: "Professor Putricide is the Scourge genius behind the development of all forms of blight, plague, ooze, scourge, and death delivery.",
+		way: {
+			x: 57.1,
+			y: 30.3
+		},
+		id: 174064,
+		loot: [
+			{
+				id: 183649,
+				name: "Bag of Discarded Entrails"
+			},
+			{
+				id: 183651,
+				name: "Chestplate of Septic Sutures"
+			},
+			{
+				id: 183650,
+				name: "Miniscule Abomination in a Jar"
 			},
 			{
 				id: 183200,
