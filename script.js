@@ -694,7 +694,7 @@ function nextSpawn(rare)
 	var currentDate = new moment();
 
 	while (spawnTimer < currentDate) {
-		spawnTimer.add(400, 'minutes');
+		spawnTimer.add(200, 'minutes');
 	}
 
 	var duration = moment.duration(spawnTimer.diff(currentDate));
