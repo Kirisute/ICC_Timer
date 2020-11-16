@@ -777,7 +777,7 @@ $(function() {
 
 	rares.forEach((rare, index) => {
 		const rareTimer = initTimer.clone();
-		rareTimer.add((index - initIndex) * 20, 'minutes');
+		rareTimer.add((index - initIndex) * 10, 'minutes');
 
 		rare.timer = rareTimer.toISOString();
 		rare.img = `${document.URL.replace('#', '')}${rare.img}`;
