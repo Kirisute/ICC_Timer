@@ -702,7 +702,7 @@ function nextSpawn(rare)
 
 	rare.nextSpawnMins = Math.round(duration.asMinutes());
 	rare.nextSpawnDuration = Math.round(duration.asMinutes()) +" min";
-	rare.nextSpawnSecs = (duration.asSeconds() / 60).toFixed(2);
+	rare.nextSpawnSecs = ((duration.asSeconds() / 60) +1 ).toFixed(2);
 	rare.nextSpawn = spawnTimer.format("HH:mm");
 }
 
